@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17: Các mức ưu tiên của bộ chọn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 5px solid #004d40;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .example {
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        code {
+            background-color: #e0f7fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bài 17: Các mức ưu tiên của bộ chọn</h1>
+    </header>
+
+    <nav>
+        <a href="#priority-selectors">Ưu tiên của bộ chọn</a>
+        <a href="#pseudo-classes">Pseudo-classes</a>
+        <a href="#pseudo-elements">Pseudo-elements</a>
+    </nav>
+
+    <main>
+        <section id="priority-selectors" class="content-section">
+            <h2>Luyện tập 1: Sự khác nhau giữa hai định dạng</h2>
+            <p><strong>Lời giải:</strong></p>
+            <ul>
+                <li><code>#p123 + p</code>: Đây là một bộ chọn ID kết hợp với sibling combinator. Nó chọn các phần tử <code>p</code> là anh em liền kề của phần tử có <code>ID</code> là "p123".</li>
+                <li><code>h2#p123 + p</code>: Đây là một bộ chọn kết hợp giữa element selector (<code>h2</code>), ID selector và sibling combinator. Nó chọn các phần tử <code>p</code> là anh em liền kề của phần tử <code>h2</code> có <code>ID</code> là "p123".</li>
+            </ul>
+        </section>
+
+        <section id="pseudo-classes" class="content-section">
+            <h2>Vận dụng 1: Các dạng pseudo-class</h2>
+            <p><strong>:hover</strong> - Kích hoạt khi người dùng di chuột qua phần tử.</p>
+            <p><strong>:active</strong> - Kích hoạt khi phần tử được nhấn giữ.</p>
+            <p><strong>:focus</strong> - Kích hoạt khi phần tử được focus.</p>
+            <p><strong>:nth-child()</strong> - Chọn phần tử con dựa trên vị trí của chúng.</p>
+        </section>
+
+        <section id="pseudo-elements" class="content-section">
+            <h2>Vận dụng 2: Các dạng pseudo-element</h2>
+            <p><strong>::before</strong> - Chèn nội dung trước phần tử.</p>
+            <p><strong>::after</strong> - Chèn nội dung sau phần tử.</p>
+            <p><strong>::first-line</strong> - Áp dụng định dạng cho dòng đầu tiên của nội dung văn bản.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bài 17: Các mức ưu tiên của bộ chọn. All rights reserved.</p>
+    </footer>
+  <a href="https://uyenthao-robot.github.io/websitenhom5/" class="home-button">HOME</a>
+</body>
+</html>
